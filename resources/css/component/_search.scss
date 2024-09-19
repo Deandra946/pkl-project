@@ -1,0 +1,27 @@
+.modal-backdrop {
+    display: none;
+}
+
+.modal {
+    .modal-dialog {
+        .modal-content {
+            width: 500px;
+            height: 55px;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            form {
+                width: 100%;
+                input {
+                    width: 100%;
+                }
+            }
+            .btn-close {
+                position: absolute;
+                right: -100px;
+                background-color: #fff;
+            }
+        }
+    }
+}

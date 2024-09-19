@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+* .page-content {
+  padding-right: 135px;
+  padding-left: 135px;
+}
+
+.page-content .banner {
+  display: flex;
+}
+.page-content .banner .content-left {
+  width: 580px;
+  height: 500px;
+  background-image: url(../../../public/storage/banner-img/Rectangle3.png);
+  border-radius: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 198px;
+}
+.page-content .banner .content-left .brand-title {
+  font-size: 64px;
+  font-weight: bold;
+  color: #fff;
+}
+.page-content .banner .content-left .p-brand {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 25px;
+}
+.page-content .banner .content-left .btn-upload {
+  width: 113px;
+  height: 50px;
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-content .banner .content-left .btn-upload .upload {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+.page-content .banner .content-right {
+  width: 541px;
+  height: 500px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+.page-content .banner .content-right .content-featured .featured-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 0;
+}
+.page-content .banner .content-right .content-featured .account-featured {
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+}
+.page-content .galeri .card-galeri {
+  width: auto;
+  margin: 20px auto;
+  -moz-columns: 3;
+       columns: 3;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.page-content .galeri .card-galeri .galeri-item {
+  width: 100%;
+  margin-bottom: 30px;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.page-content .galeri .card-galeri .galeri-item a img {
+  max-width: 100%;
+}
+.page-content .galeri .card-galeri .galeri-item a:hover img {
+  filter: brightness(50%);
+}
+.page-content .galeri .card-galeri .galeri-item .profile {
+  position: absolute;
+  z-index: 5;
+  bottom: -50px;
+  left: 25px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.page-content .galeri .card-galeri .galeri-item .profile .pp_sender {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+}
+.page-content .galeri .card-galeri .galeri-item .profile .name_sender {
+  margin-left: 10px;
+}
+.page-content .galeri .card-galeri .galeri-item .profile .name_sender .name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0;
+}
+.page-content .galeri .card-galeri .galeri-item .profile .name_sender .status {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.page-content .galeri .card-galeri .galeri-item .btn-action {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+  position: absolute;
+  top: -50px;
+  width: 100%; /* Pastikan menyesuaikan lebar */
+  z-index: 5;
+}
+.page-content .galeri .card-galeri .galeri-item .btn-action .download {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.page-content .galeri .card-galeri .galeri-item .btn-action .btn-right {
+  display: flex;
+  gap: 10px;
+}
+.page-content .galeri .card-galeri .galeri-item .btn-action .btn-right .like {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.page-content .galeri .card-galeri .galeri-item .btn-action .btn-right .save {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.page-content .galeri .card-galeri .galeri-item:hover .profile {
+  bottom: 25px;
+}
+.page-content .galeri .card-galeri .galeri-item:hover .btn-action {
+  top: 25px;
+}
+
+.navbar {
+  width: 100%;
+}
+.navbar .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  padding-left: 135px;
+  padding-right: 135px;
+}
+.navbar .top .left {
+  display: flex;
+  justify-content: start;
+}
+.navbar .top .center-con .nav-nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.navbar .top .center-con .nav-nav .nav-link {
+  font-size: 16px;
+  font-weight: 600;
+}
+.navbar .top .center-con .nav-nav .search {
+  background: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+.navbar .top .right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 0;
+}
+.navbar .top .right .btn-sign {
+  display: flex;
+}
+.navbar .top .right .btn-sign .login {
+  width: 66px;
+  height: 40px;
+  background: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+.navbar .top .right .btn-sign .register {
+  width: 87px;
+  height: 40px;
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+.navbar .line {
+  width: 100%;
+  padding-left: 135px;
+  padding-right: 135px;
+}
+.navbar .line .l {
+  width: 100%;
+  border: 1px solid black;
+}
+.navbar .bottom {
+  padding-left: 135px;
+  padding-right: 135px;
+  margin-top: 10px;
+  width: 100%;
+  top: 70px;
+}
+.navbar .bottom .category-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
+  /* Tambahkan background saat di-hover */
+}
+.navbar .bottom .category-wrapper .category {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px 0;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+.navbar .bottom .category-wrapper .category .category-link {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  border-right: 1px solid rgb(48, 48, 48); /* Garis batas */
+  line-height: 10px;
+}
+.navbar .bottom .category-wrapper .category .category-link:last-child {
+  border-right: none; /* Hilangkan garis batas pada elemen terakhir */
+  margin-right: 40px; /* Tambahkan margin kanan untuk memberikan ruang ekstra */
+}
+.navbar .bottom .category-wrapper .category::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Edge */
+}
+.navbar .bottom .category-wrapper .scroll-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0 10px;
+  z-index: 1; /* Pastikan tombol berada di atas */
+  pointer-events: auto; /* Pastikan tombol bisa diklik */
+}
+.navbar .bottom .category-wrapper .right {
+  right: 0;
+}
+.navbar .bottom .category-wrapper .scroll-btn:hover {
+  background-color: #f0f0f0;
+}
+.navbar .bottom .category-wrapper:has(.category) .scroll-btn {
+  display: block;
+}
+
+footer {
+  width: 100%;
+  height: 253px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+footer .year p {
+  color: #fff;
+}
+
+.modal {
+  display: none; /* Default tidak ditampilkan */
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Latar belakang transparan */
+  overflow: hidden; /* Menghilangkan scroll pada modal */
+  /* Tombol close (X) di pojok kanan atas */
+  /* Tombol next dan prev di samping kanan dan kiri konten modal */
+  /* Hover efek untuk tombol */
+}
+.modal .modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  width: 70%;
+  max-width: 900px;
+  position: relative;
+}
+.modal .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 35px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+.modal .prev, .modal .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  padding: 16px;
+}
+.modal .prev {
+  left: 10px;
+}
+.modal .next {
+  right: 10px;
+}
+.modal .prev:hover, .modal .next:hover, .modal .close:hover {
+  color: #f1f1f1;
+}
+
+.modal-backdrop {
+  display: none;
+}
+
+.modal .modal-dialog .modal-content {
+  width: 500px;
+  height: 55px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.modal .modal-dialog .modal-content form {
+  width: 100%;
+}
+.modal .modal-dialog .modal-content form input {
+  width: 100%;
+}
+.modal .modal-dialog .modal-content .btn-close {
+  position: absolute;
+  right: -100px;
+  background-color: #fff;
+}/*# sourceMappingURL=main.css.map */

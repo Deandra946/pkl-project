@@ -1,0 +1,174 @@
+.page-content {
+    .banner {
+        display: flex;
+        .content-left {
+            width: 580px;
+            height: 500px;
+            background-image: url(../../../public/storage/banner-img/Rectangle3.png);
+            border-radius: 30px;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 198px;
+
+            .brand-title {
+                font-size: 64px;
+                font-weight: bold;
+                color: #fff;
+            }
+            .p-brand {
+                font-size: 24px;
+                font-weight: 400;
+                color: #fff;
+                line-height: 25px;
+            }
+            .btn-upload {
+                width: 113px;
+                height: 50px;
+                background-color: black;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .upload {
+                    text-decoration: none;
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: #fff;
+                }
+            }
+        }
+        .content-right {
+            width: 541px;
+            height: 500px;
+            border-radius: 10px;
+            margin-left: 20px;
+            .content-featured {
+                .featured-title {
+                    font-size: 32px;
+                    font-weight: 600;
+                    color: black;
+                    margin-bottom: 0;
+                }
+                .account-featured {
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: black;
+                }
+            }
+        }
+    }
+    .galeri {
+        .card-galeri {
+            width: auto;
+            margin: 20px auto;
+            columns: 3;
+            column-gap: 30px;
+
+            .galeri-item {
+                width: 100%;
+                margin-bottom: 30px;
+                break-inside: avoid;
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+
+                a {
+                    img {
+                        max-width: 100%;
+                    }
+                }
+                a:hover {
+                     img{
+                        filter: brightness(50%);
+                    }
+                }
+
+               
+                
+                .profile {
+                    position: absolute;
+                    z-index: 5;
+                    bottom: -50px;
+                    left: 25px;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    .pp_sender {
+                        width: 45px;
+                        height: 45px;
+                        border-radius: 100%;
+                    }
+                    .name_sender {
+                        margin-left: 10px;
+                        .name {
+                            font-size: 16px;
+                            font-weight: 600;
+                            color: #fff;
+                            margin-bottom: 0;
+                        }
+                        .status {
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: #fff;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                .btn-action {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                    position: absolute;
+                    top: -50px;
+                    width: 100%; /* Pastikan menyesuaikan lebar */
+                    z-index: 5;
+                    .download {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 10px;
+                        background-color: #fff;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 20px;
+                    }
+
+                    .btn-right {
+                        display: flex;
+                        gap: 10px;
+                        .like {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 10px;
+                            background-color: #fff;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 20px;
+                        }
+                        .save {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 10px;
+                            background-color: #fff;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+            .galeri-item:hover {
+                .profile {
+                    bottom: 25px;
+                }
+                .btn-action {
+                    top: 25px;
+                }
+            }
+        }
+    }
+}

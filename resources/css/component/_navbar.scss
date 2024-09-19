@@ -1,0 +1,139 @@
+.navbar {
+    width: 100%;
+    .top {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+        padding-left: 135px;
+        padding-right: 135px;
+        .left {
+            display: flex;
+            justify-content: start;
+        }
+        .center-con {
+            .nav-nav {
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                .nav-link {
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+
+                .search {
+                    background: none;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+        }
+        .right {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            padding-right: 0;
+            .btn-sign {
+                display: flex;
+                .login {
+                    width: 66px;
+                    height: 40px;
+                    background: none;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin-right: 10px;
+                }
+                .register {
+                    width: 87px;
+                    height: 40px;
+                    background-color: black;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .line {
+        width: 100%;
+        padding-left: 135px;
+        padding-right: 135px;
+        .l {
+            width: 100%;
+            border: 1px solid black;
+        }
+    }
+    .bottom {
+        padding-left: 135px;
+        padding-right: 135px;
+        margin-top: 10px;
+        width: 100%;
+        top: 70px;
+        .category-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding-right: 50px;
+            .category {
+                display: flex;
+                overflow-x: auto;
+                white-space: nowrap;
+                padding: 10px 0;
+                scrollbar-width: none; /* Hide scrollbar for Firefox */
+                .category-link {
+                    padding: 10px 20px;
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: black;
+                    border-right: 1px solid rgb(48, 48, 48); /* Garis batas */
+                    line-height: 10px;
+                }
+
+                .category-link:last-child {
+                    border-right: none; /* Hilangkan garis batas pada elemen terakhir */
+                    margin-right: 40px; /* Tambahkan margin kanan untuk memberikan ruang ekstra */
+                }
+            }
+            .category::-webkit-scrollbar {
+                display: none; /* Hide scrollbar for Chrome, Safari, and Edge */
+            }
+            .scroll-btn {
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: #fff;
+                border: none;
+                font-size: 24px;
+                cursor: pointer;
+                padding: 0 10px;
+                z-index: 1; /* Pastikan tombol berada di atas */
+                pointer-events: auto; /* Pastikan tombol bisa diklik */
+            }
+
+            .right {
+                right: 0;
+            }
+
+            /* Tambahkan background saat di-hover */
+            .scroll-btn:hover {
+                background-color: #f0f0f0;
+            }
+        }
+        .category-wrapper:has(.category) .scroll-btn {
+            display: block;
+        }
+    }
+}
